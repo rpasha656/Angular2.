@@ -1,0 +1,13 @@
+import {Component} from 'angular2/core';
+
+@Component({
+    selector: 'my-app',
+    template: '<h1>List of movies</h1>' +
+    '<p *ngFor="#movie in movieList">{{movie}}</p>'
+
+})
+
+export class movieList {
+
+public movieList=['xyz','abc','123'];
+}
